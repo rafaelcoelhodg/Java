@@ -1,0 +1,28 @@
+package Exercicios_Fixacao;
+
+import java.util.Locale;
+import java.util.Scanner;
+
+public class Exercicio8_Consumo {
+
+	public static void main(String[] args) {
+		Locale.setDefault(Locale.US);
+		Scanner sc = new Scanner(System.in);
+		
+		double distancia, combustivel, consumo;
+		
+		System.out.print("Distancia Percorrida: ");
+		distancia = sc.nextDouble();
+		
+		System.out.print("Combustivel Gasto: ");
+		combustivel = sc.nextDouble();
+		
+		consumo = distancia / combustivel;
+		
+		System.out.printf("Consumo Medio = %.3f", consumo);
+		
+		sc.close();
+
+	}
+
+}
