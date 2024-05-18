@@ -1,0 +1,32 @@
+package Exercicios_Fixacao;
+
+import java.util.Locale;
+import java.util.Scanner;
+
+public class Exercicio5_Troco {
+
+	public static void main(String[] args) {
+		Locale.setDefault(Locale.US);
+		Scanner sc = new Scanner (System.in);
+		
+		double preco, quantidade, valor, dinheiro, troco;
+		
+		System.out.print("Preço unitário do Produto: ");
+		preco = sc.nextDouble();
+		
+		System.out.print("Quantidade Comprada: ");
+		quantidade = sc.nextDouble();
+		
+		System.out.print("Dinheiro Recebido: ");
+		dinheiro = sc.nextDouble();
+		
+		valor = quantidade * preco;
+		troco = dinheiro - valor;
+		
+		System.out.printf("TROCO = %.2f", troco);
+		
+		sc.close();
+
+	}
+
+}
