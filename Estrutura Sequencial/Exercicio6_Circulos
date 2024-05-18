@@ -1,0 +1,25 @@
+package Exercicios_Fixacao;
+
+import java.util.Locale;
+import java.util.Scanner;
+
+public class Exercicio6_Circulos {
+
+	public static void main(String[] args) {
+		Locale.setDefault(Locale.US);
+		Scanner sc = new Scanner (System.in);
+		
+		double raio, pi = 3.14159, area;
+		
+		System.out.print("Digite o valor do Raio do Círculo: ");
+		raio = sc.nextDouble();
+		
+		area = pi * Math.pow(raio, 2);
+		
+		System.out.printf("AREA = %.3f%n", area);
+		
+		sc.close();
+
+	}
+
+}
