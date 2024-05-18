@@ -1,0 +1,35 @@
+package Exercicios_Fixacao;
+
+import java.util.Locale;
+import java.util.Scanner;
+
+public class Exercicio9_Medidas {
+
+	public static void main(String[] args) {
+		Locale.setDefault(Locale.US);
+		Scanner sc = new Scanner (System.in);
+		
+		double A, B, C, areaQuadrado, areaTriangulo, areaTrapezio;
+		
+		System.out.print("Digite a Medida A: ");
+		A = sc.nextDouble();
+		
+		System.out.print("Digite a Medida B: ");
+		B = sc.nextDouble();
+		
+		System.out.print("Digite a Medida C: ");
+		C = sc.nextDouble();
+		
+		areaQuadrado = Math.pow(A, 2);
+		areaTriangulo = A * B / 2;
+		areaTrapezio = (A + B) * C / 2;
+		
+		System.out.printf("Area do Quadrado = %.4f%n", areaQuadrado);
+		System.out.printf("Area do Triangulo = %.4f%n", areaTriangulo);
+		System.out.printf("Area do Trapezio = %.4f%n", areaTrapezio);
+		
+		sc.close();
+
+	}
+
+}
